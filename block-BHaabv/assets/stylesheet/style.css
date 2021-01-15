@@ -1,0 +1,231 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*Custome Style*/
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1D2029;
+    color: #ffffff;
+}
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 32px;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.flex-center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*Header*/
+.header {
+    background-color: #20222F;
+    padding-top: 40px;
+    padding-bottom: 120px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    border-bottom-right-radius: 14px;
+    border-bottom-left-radius: 14px;
+}
+.header h1 {
+    font-size: 34px;
+    color: #ffffff;
+    font-weight: 700;
+}
+.header p {
+    color: #9198B5;
+    font-size: 16px;
+    font-weight: 700;
+}
+.btn {
+    width: 40px;
+    height: 20px;
+    background: linear-gradient(to right, #4194C9, #3ECE8E );
+    border-radius: 20px;
+    margin-left: 16px;
+    padding: 2px;
+}
+.circle {
+    width: 14px;
+    height: 14px;
+    background-color: #252A46;
+    border-radius: 50%;
+    
+}
+/*Card*/
+.main {
+    margin-top: 100px;
+}
+.card-container {
+    padding: 60px 0;
+    position: relative;
+}
+.card {
+    padding: 32px;
+    text-align: center;
+    width: 23%;
+    background-color: #252B43;
+    position: relative;
+    border-radius: 8px;
+}
+.card-header i {
+    color: #178EF4;
+    margin-right: 8px;
+    font-size: 25px;
+}
+.card-header p {
+    font-size: 14px;
+    color: #969292;
+}
+.card-body h3 {
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 1;
+}
+.card-body {
+    padding: 20px 0;
+}
+.card-body p {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: #969292;
+}
+.card-footer {
+    color: #39A190;
+    font-size: 12px;
+}
+.card-footer span {
+    margin-left: 4px;
+}
+.border-top {
+    width: 100%;
+    height: 4px;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+    background-color: #1A8FF6;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+.card-twitter .border-top{
+    background-color: #1BA2F3;
+}
+.card-insta .border-top {
+    background: linear-gradient(to right, #FBC271, #DE4892);
+}
+.card-insta i {
+    color: #FBC271;
+}
+.card-insta .card-footer i {
+    color: #39A190;
+}
+.card-youtube .border-top {
+    background-color: #B7082C;
+}
+.card-youtube .card-header i {
+    color: #B7082C;
+}
+.card-youtube .card-footer {
+    color: #e03b11;
+}
+/*Overview*/
+.overview-card {
+    padding: 20px 0;
+}
+.overview h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.overview-header p {
+    font-size: 16px;
+    font-weight: 700;
+    color: #969292
+}
+.overview-header i {
+    color: #178EF4;
+    margin-right: 8px;
+    font-size: 20px;
+}
+.overview-footer {
+    color: #39A190;
+    font-size: 12px;
+    margin-top: 14px;
+}
+.overview h4 {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 700;
+}
+.card-insta i {
+    color: #FBC271;
+}
+.overview-footer .down {
+    color: #e03b11;
+}
+.overview-footer .up i {
+    color: #37AC91;
+}
+.card-youtube .overview-header i {
+    color: #B7082C;
+}
